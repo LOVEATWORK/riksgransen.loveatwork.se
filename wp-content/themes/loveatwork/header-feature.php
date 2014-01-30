@@ -23,7 +23,7 @@
 
 	$location = get_field("map");
 
-	var_dump($location);
+	// var_dump($location);
 
 ?>
 

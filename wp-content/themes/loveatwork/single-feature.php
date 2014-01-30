@@ -22,6 +22,8 @@ get_header('feature'); ?>
 		<?php the_content(); ?>
 		<?php the_field("map"); ?>
 
+		<p>This template should be very flexible. Also need to install that wonderful plugin that's used for widgets on pages</p>
+
 	</div><!-- .entry-content -->
 
 	
