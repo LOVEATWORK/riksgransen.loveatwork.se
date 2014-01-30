@@ -1,4 +1,4 @@
-riksgransen.loveatwork.se
+Theme for loveatwork.se
 =========================
 
-Theme for loveatwork.se
+This is the new and improved Loveatwork / Riksgränsen theme
