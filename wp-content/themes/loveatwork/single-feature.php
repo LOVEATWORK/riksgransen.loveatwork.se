@@ -29,5 +29,4 @@ get_header('feature'); ?>
 	
 </article><!-- #post-## -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
