@@ -19,13 +19,17 @@ get_header('feature'); ?>
 
 	<div class="entry-content">
 	
-		<?php the_content(); ?>
-		<?php the_field("map"); ?>
+		<?php include("resources/style-boilerplate.html"); ?>
+
+		<?php // echo $post->post_content ?>
+
+		<?php 
+			// the_field("map"); 
+		?>
 
 	</div><!-- .entry-content -->
 
 	
 </article><!-- #post-## -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
