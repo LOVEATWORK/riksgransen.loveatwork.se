@@ -19,10 +19,13 @@ get_header('feature'); ?>
 
 	<div class="entry-content">
 	
-		<?php the_content(); ?>
-		<?php the_field("map"); ?>
+		<?php include("resources/style-boilerplate.html"); ?>
 
-		<p>This template should be very flexible. Also need to install that wonderful plugin that's used for widgets on pages</p>
+		<?php // echo $post->post_content ?>
+
+		<?php 
+			// the_field("map"); 
+		?>
 
 	</div><!-- .entry-content -->
 

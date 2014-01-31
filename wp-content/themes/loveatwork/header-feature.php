@@ -24,7 +24,5 @@
 <body <?php body_class(); ?>>
 <div id="page feature" class="hfeed site">
 	<?php do_action( 'before' ); ?>
-	
 	<?php include(dirname(__FILE__) . "/inc/masthead.php"); ?>
-
 	<div id="content" class="site-content container_12">
