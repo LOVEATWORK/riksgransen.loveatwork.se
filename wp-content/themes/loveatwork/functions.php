@@ -55,9 +55,83 @@ function loveatwork_setup() {
 
 	// Enable support for HTML5 markup.
 	add_theme_support( 'html5', array( 'comment-list', 'search-form', 'comment-form', ) );
+
+
 }
 endif; // loveatwork_setup
 add_action( 'after_setup_theme', 'loveatwork_setup' );
+
+/** 
+* Register custom post types
+*/
+
+// Features post type
+	add_action('init', 'cptui_register_my_cpt_feature');
+	function cptui_register_my_cpt_feature() {
+	register_post_type('feature', array(
+	'label' => 'Features',
+	'description' => 'Lång artikel som handlar om något specifikt, och i vissa fall har en egen CSS. ',
+	'public' => true,
+	'show_ui' => true,
+	'show_in_menu' => true,
+	'capability_type' => 'post',
+	'map_meta_cap' => true,
+	'hierarchical' => false,
+	'rewrite' => array('slug' => 'feature', 'with_front' => true),
+	'query_var' => true,
+	'has_archive' => true,
+	'supports' => array('title','editor','excerpt','trackbacks','revisions','thumbnail','author','page-attributes','post-formats'),
+	'taxonomies' => array('features'),
+	'labels' => array (
+	  'name' => 'Features',
+	  'singular_name' => 'Feature',
+	  'menu_name' => 'Features',
+	  'add_new' => 'Add Feature',
+	  'add_new_item' => 'Add New Feature',
+	  'edit' => 'Edit',
+	  'edit_item' => 'Edit Feature',
+	  'new_item' => 'New Feature',
+	  'view' => 'View Feature',
+	  'view_item' => 'View Feature',
+	  'search_items' => 'Search Features',
+	  'not_found' => 'No Features Found',
+	  'not_found_in_trash' => 'No Features Found in Trash',
+	  'parent' => 'Parent Feature',
+	)
+	) ); }
+
+	// People post type
+	add_action('init', 'cptui_register_my_cpt_people');
+	function cptui_register_my_cpt_people() {
+	register_post_type('people', array(
+	'label' => 'Människor',
+	'description' => '',
+	'public' => true,
+	'show_ui' => true,
+	'show_in_menu' => true,
+	'capability_type' => 'post',
+	'map_meta_cap' => true,
+	'hierarchical' => false,
+	'rewrite' => array('slug' => 'people', 'with_front' => true),
+	'query_var' => true,
+	'supports' => array('title','editor','revisions','thumbnail'),
+	'labels' => array (
+	  'name' => 'Människor',
+	  'singular_name' => 'Människa',
+	  'menu_name' => 'Människor',
+	  'add_new' => 'Add Människa',
+	  'add_new_item' => 'Add New Människa',
+	  'edit' => 'Edit',
+	  'edit_item' => 'Edit Människa',
+	  'new_item' => 'New Människa',
+	  'view' => 'View Människa',
+	  'view_item' => 'View Människa',
+	  'search_items' => 'Search Människor',
+	  'not_found' => 'No Människor Found',
+	  'not_found_in_trash' => 'No Människor Found in Trash',
+	  'parent' => 'Parent Människa',
+	)
+	) ); }
 
 /**
  * Register widgetized area and update sidebar with default widgets.
@@ -114,3 +188,189 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+* Activate field groups (Advanced Custom Fields)
+*/
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_contact-information',
+		'title' => 'Contact information',
+		'fields' => array (
+			array (
+				'key' => 'field_52ea5fd773696',
+				'label' => 'Phone',
+				'name' => 'phone',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_52ea5fa173693',
+				'label' => 'E-mail',
+				'name' => 'e-mail',
+				'type' => 'email',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+			array (
+				'key' => 'field_52ea5fbe73694',
+				'label' => 'Twitter',
+				'name' => 'twitter',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_52ea5fcf73695',
+				'label' => 'Instagram',
+				'name' => 'instagram',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_52ea5ffd05ede',
+				'label' => 'Skype',
+				'name' => 'skype',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'people',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+	register_field_group(array (
+		'id' => 'acf_feature-fields',
+		'title' => 'Feature fields',
+		'fields' => array (
+			array (
+				'key' => 'field_52ea5caf5c8a6',
+				'label' => 'Custom css',
+				'name' => 'custom_css',
+				'type' => 'textarea',
+				'instructions' => 'Custom CSS for this post',
+				'default_value' => '',
+				'placeholder' => 'Custom styles here',
+				'maxlength' => '',
+				'formatting' => 'none',
+			),
+			array (
+				'key' => 'field_52ea5d6980be9',
+				'label' => 'Map',
+				'name' => 'map',
+				'type' => 'google_map',
+				'center_lat' => '',
+				'center_lng' => '',
+				'zoom' => '',
+				'height' => '',
+			),
+			array (
+				'key' => 'field_52ea61591d343',
+				'label' => 'Author',
+				'name' => 'author',
+				'type' => 'post_object',
+				'post_type' => array (
+					0 => 'people',
+				),
+				'taxonomy' => array (
+					0 => 'all',
+				),
+				'allow_null' => 1,
+				'multiple' => 1,
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'feature',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+	register_field_group(array (
+		'id' => 'acf_sub-header',
+		'title' => 'Sub-header',
+		'fields' => array (
+			array (
+				'key' => 'field_52ea61e29a49b',
+				'label' => 'Sub-header',
+				'name' => 'sub-header',
+				'type' => 'text',
+				'instructions' => 'Sub-header field for features. HTML allowed',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'feature',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'acf_after_title',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
