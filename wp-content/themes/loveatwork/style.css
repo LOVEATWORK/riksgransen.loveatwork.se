@@ -2272,10 +2272,25 @@ body {
 .fa-plus-square-o:before {
   content: "\f196";
 }
+/* FONTS */
+body {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.6em;
+}
 h1 {
   font-size: 2em;
+  font-weight: 600;
   color: #3e3e3e;
   background: none;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+h3 {
+  font-size: 1.3em;
+  font-weight: 600;
 }
 .gray {
   background: #3e3e3e;

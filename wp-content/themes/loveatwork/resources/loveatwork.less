@@ -27,10 +27,27 @@ and Blueprint http://www.blueprintcss.org/
 @import "../inc/fontawesome/font-awesome";
 @import "../inc/loveatwork-variables";
 
+body {
+	font-family: @standard-font;
+	font-weight: @standard-light;
+	font-size: 1.6em;
+}
+
 h1 {
 	font-size: 2em;
+	font-weight: @standard-bold;
 	color: @text-color;
 	background: none;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: @standard-light;
+}
+
+h3 {
+	font-size: 1.3em;
+	font-weight: @standard-bold;
 }
 
 .gray {
