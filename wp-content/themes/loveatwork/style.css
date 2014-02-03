@@ -2273,10 +2273,14 @@ body {
   content: "\f196";
 }
 /* FONTS */
+/* COLORS */
+/* MIXINS */
 body {
   font-family: 'Open sans', sans-serif;
   font-weight: 300;
   font-size: 1.6em;
+  margin: 0;
+  padding: 0;
 }
 h1 {
   font-size: 2em;
@@ -2298,4 +2302,121 @@ h3 {
 .debug {
   background: #ff6296;
   color: #000;
+}
+/* BRANDING */
+#masthead {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+#masthead .site-title {
+  background: #ffee08;
+  width: 210px;
+  height: 75px;
+  float: left;
+}
+#masthead .site-title a {
+  display: block;
+  background: url('images/law-logo.png') no-repeat 25px 30px;
+}
+#masthead nav.social {
+  display: block;
+  margin-right: 60px;
+  margin-top: 20px;
+  float: right;
+}
+#masthead nav.social a {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  color: #FFF;
+}
+#masthead nav.social a:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  color: #ffee08;
+}
+#masthead nav.social .icon {
+  color: #3e3e3e;
+}
+#masthead nav.primary {
+  display: block;
+  float: right;
+  margin-top: 25px;
+  margin-right: 40px;
+}
+#masthead nav.primary a {
+  color: #FFF;
+}
+/* CONTENT */
+.author-avatar {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.feature .entry-header {
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.feature .entry-header .header-text {
+  padding-top: 450px;
+}
+.feature .entry-header .header-text h1 {
+  font-size: 60px;
+  color: #FFF;
+  font-weight: normal;
+  line-height: 65px;
+  font-family: Georgia, serif;
+}
+.feature .entry-header .header-text h2 {
+  margin-top: 20px;
+  color: #FFF;
+  font-weight: 300;
+  font-size: 20px;
+}
+.feature .entry-header .entry-meta {
+  margin-top: 30px;
+  color: #FFF;
+  line-height: 25px;
+  font-size: 12px;
+}
+.feature .entry-header .entry-meta img {
+  vertical-align: middle;
+}
+.feature .entry-header .entry-meta span {
+  padding: 28px 0 0 5px;
+}
+.feature .entry-header .entry-meta hr {
+  width: 25%;
+  color: #FFF;
+  margin-bottom: 30px;
+}
+/* UTILITIES */
+.ir {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.center {
+  text-align: center;
+}
+.menu-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.menu-list li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style-type: none;
+}
+.hide {
+  display: none;
 }

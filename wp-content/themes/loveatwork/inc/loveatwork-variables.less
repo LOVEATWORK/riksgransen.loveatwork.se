@@ -1,6 +1,25 @@
-@text-color: #3e3e3e;
-
 /* FONTS */
 @standard-font: 'Open sans', sans-serif;
 @standard-light: 300;
 @standard-bold: 600;
+
+/* COLORS */
+@loveatwork-yellow: #ffee08;
+@text-color: #3e3e3e;
+
+/* MIXINS */
+.opacity (@opacity: 0.5) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 			@opacity;
+}
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}

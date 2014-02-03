@@ -16,7 +16,32 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+		<?php
+			// Features
+
+			$args = array('post_type' => 'feature', 'orderby'=>'rand', 'posts_per_page'=>'1');
+		
+			$features = new WP_Query($args);
+		
+			while ($features->have_posts()) : $features->the_post(); ?>
+		
+			    <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+			    <p><?php the_excerpt(); // or the_content(); ?></p>
+
+			    <?php get_template_part( 'content', get_post_format() ); ?>
+
+		
+		<?php
+			endwhile;
+		
+			wp_reset_postdata();
+
+		?>
+
+		<?php 
+
+		// Blog posts
+		if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -42,5 +67,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php // get_sidebar(); ?>
 <?php get_footer(); ?>
