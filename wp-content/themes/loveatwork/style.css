@@ -2308,6 +2308,7 @@ h3 {
   position: absolute;
   top: 30px;
   width: 100%;
+  z-index: 9999;
 }
 #masthead .site-title {
   background: #ffee08;
