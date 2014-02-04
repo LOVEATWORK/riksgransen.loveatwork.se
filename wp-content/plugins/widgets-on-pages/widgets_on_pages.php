@@ -198,16 +198,14 @@ function widgets_on_page($atts){
   else :
     $sidebar_name = $id;
   endif;
-  $str =  "<div id='" . str_replace(" ", "_", $sidebar_name) . "' class='widgets_on_page'>
-    <ul>";
+  $str =  "<div id='" . str_replace(" ", "_", $sidebar_name) . "' class='widgets_on_page'>";
   ob_start();
   if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar($sidebar_name) ) :
   endif;
   $myStr = ob_get_contents();
   ob_end_clean();
   $str .= $myStr;
-  $str .=  "</ul>
-  </div><!-- widgets_on_page -->";
+  $str .= "</div><!-- widgets_on_page -->";
   return $str;
 }
 

@@ -10,7 +10,7 @@ get_header(); ?>
 <div id="primary" class="content-area start-page">
 	<main id="main" class="site-main" role="main">
 
-		<!-- Get random feature here -->
+		<!-- FEATURED ARTICLE -->
 		
 		<?php
 		
@@ -20,6 +20,7 @@ get_header(); ?>
 			while ($feature->have_posts()) : $feature->the_post(); 
 			
 				$img = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
+				$textcolor = get_field('header_color');
 
 		?>
 
@@ -27,18 +28,20 @@ get_header(); ?>
 
 					<div class="container_12 header-text">
 
-						<div class="grid_10 push_1">
+						<div class="grid_12">
 							
 							<div class="category-meta center">
 								<?php 
 									$cat = get_the_category();
-									echo "<span>" . $cat[0]->cat_name . "</span>";
+									echo "<span style='color: " . $textcolor . "'>" . $cat[0]->cat_name . "</span>";
 								?>
 								<hr />
 							</div>
 
-							<h1 class="entry-title center"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
-							<h2 class="center"><a href="<?php the_permalink() ?>"><?php the_field("sub-header") ?></a></h2>
+							<h1 class="entry-title center"><a style="color: <?php echo $textcolor ?>" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+							<div class="grid_10 push_1">
+								<h2 class="center"><a style="color: <?php echo $textcolor ?>" href="<?php the_permalink() ?>"><?php the_field("sub-header") ?></a></h2>
+							</div>
 							</a>
 						</div>
 					</div>
@@ -52,25 +55,22 @@ get_header(); ?>
 
 		?>
 
-		<div id="blog-posts container_12">
+		<!-- END FEATURE -->
 
-		<!-- Loop the blog -->
-		<?php while ( have_posts() ) : the_post(); ?>
+		<!-- BLOG POSTS -->
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="">
+		<div class="start-page-content">
 
-				</header><!-- .entry-header -->
+			<!-- Loop the blog -->
+			<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="entry-content">
-					<?php the_content(); ?>
-				</div><!-- .entry-content -->
-
-			</article><!-- #post-## -->
-			
-		<?php endwhile; // end of the loop. ?>
+				<?php the_content(); ?>
+				
+			<?php endwhile; // end of the loop. ?>
 
 		</div>
+
+		<!-- END BLOG POSTS -->
 
 	</main><!-- #main -->
 </div><!-- #primary -->

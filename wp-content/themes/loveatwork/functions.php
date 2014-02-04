@@ -22,6 +22,8 @@ if ( ! function_exists( 'loveatwork_setup' ) ) :
  */
 function loveatwork_setup() {
 
+	require( get_stylesheet_directory()  . '/inc/widgets.php' );
+
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -163,6 +165,30 @@ function loveatwork_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'loveatwork_scripts' );
+
+function register_shortcodes(){
+   add_shortcode('loveatwork_separator', 'loveatwork_get_separator');
+}
+
+add_action( 'init', 'register_shortcodes');
+
+function loveatwork_get_separator($icon, $caption) {
+
+	extract(shortcode_atts(array(
+      'icon' => "",
+      'caption' =>"",
+   ), $icon));
+
+	$str = "<div class='separator center'>";
+	$str .= "<i class='fa " . $icon . " fa-2x'></i>";
+	
+	if ($caption != "")
+		$str .= "<h4 class='separator-caption'>" . $caption . "</h4>";
+
+	$str .= "</div>";
+
+	return $str;
+}
 
 /**
  * Implement the Custom Header feature.

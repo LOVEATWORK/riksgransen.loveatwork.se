@@ -7,7 +7,11 @@
 
 get_header('feature'); ?>
 
-<?php $img = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full'); ?>
+<?php 
+
+	$img = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full'); 
+	$textcolor = get_field('header_color');
+?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header responsive-background" style="background-image: url('<?php echo $img[0] ?>')">
@@ -15,8 +19,8 @@ get_header('feature'); ?>
 		<div class="container_12 header-text">
 
 			<div class="grid_10 push_1">
-				<h1 class="entry-title center"><?php the_title(); ?></h1>
-				<h2 class="center"><?php the_field("sub-header") ?></h2>
+				<h1 class="entry-title center" style="color: <?php echo $textcolor ?>"><?php the_title(); ?></h1>
+				<h2 class="center" style="color: <?php echo $textcolor ?>"><?php the_field("sub-header") ?></h2>
 
 				<div class="entry-meta center">
 
@@ -43,7 +47,7 @@ get_header('feature'); ?>
 
 					?>
 
-					<img class="author-avatar" width="24" height="24" src="<?php echo $author_thumbnail ?>" /> <span><?php echo $author_name ?></span>
+					<img class="author-avatar" width="24" height="24" src="<?php echo $author_thumbnail ?>" /> <span style="color: <?php echo $textcolor ?>"><?php echo $author_name ?></span>
 
 					<?php wp_reset_postdata(); ?>
 
@@ -65,7 +69,6 @@ get_header('feature'); ?>
 		<div class="author-meta grid_4 push_1">
 			
 			<h3>Skrivet av</h3>
-
 			
 
 		</div>
