@@ -2277,7 +2277,7 @@ a:visited {
 }
 /* BRANDING */
 #masthead {
-  position: absolute;
+  position: fixed;
   top: 30px;
   width: 100%;
   z-index: 9999;
@@ -2291,6 +2291,16 @@ a:visited {
 #masthead .site-title a {
   display: block;
   background: url('images/law-logo.png') no-repeat 25px 30px;
+}
+#masthead .site-title a:hover {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+#masthead .site-title.wide {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 #masthead nav.social {
   display: block;
@@ -2360,7 +2370,7 @@ a:visited {
 }
 .feature .entry-header,
 .start-page .entry-header {
-  height: 550px;
+  height: 650px;
 }
 .feature .entry-header .header-text,
 .start-page .entry-header .header-text {
@@ -2373,10 +2383,17 @@ a:visited {
   font-weight: normal;
   line-height: 65px;
   font-family: Georgia, serif;
+  font-style: italic;
 }
 .feature .entry-header .header-text h1 a,
 .start-page .entry-header .header-text h1 a {
   color: #FFF;
+}
+.feature .entry-header .header-text h1 a:hover,
+.start-page .entry-header .header-text h1 a:hover {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
 }
 .feature .entry-header .header-text h2,
 .start-page .entry-header .header-text h2 {

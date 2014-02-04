@@ -74,7 +74,7 @@ a, a:visited {
 
 #masthead {
 
-	position: absolute;
+	position: fixed;
 	top: 30px;
 	width: 100%;
 	z-index: 9999;
@@ -90,7 +90,17 @@ a, a:visited {
 			display: block;
 			background: url('images/law-logo.png') no-repeat 25px 30px;
 		}
+
+		a:hover {
+			.opacity(0.8);
+		}
 			
+	}
+
+	.site-title.wide {
+		position: fixed;
+		top: 0;
+		left: 0;
 	}
 
 	nav.social {
@@ -168,7 +178,7 @@ a, a:visited {
 .feature, .start-page {
 
 	.entry-header {
-		height: 550px;
+		height: 650px;
 
 		.header-text {
 			padding-top: 200px;
@@ -179,8 +189,11 @@ a, a:visited {
 				font-weight: normal;
 				line-height: 65px;
 				font-family: Georgia, serif;
+				font-style: italic;
 
 				a { color: #FFF; }
+
+				a:hover { .opacity(0.9); }
 			}
 
 			h2 {
@@ -234,7 +247,6 @@ a, a:visited {
 .contact-img img {
 	.border-radius(75px);
 }
-
 
 /* UTILITIES */
 .ir {

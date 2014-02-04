@@ -1,5 +1,5 @@
 
-<header id="masthead" class="site-header" role="banner">
+<header id="masthead" class="site-header" role="banner" data-stellar-horizontal-offset="0" data-stellar-ratio="0.2">
 	<div class="site-branding">
 		<h1 class="site-title ir"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		

@@ -24,11 +24,11 @@ get_header(); ?>
 
 		?>
 
-				<article class="entry-header responsive-background" style="background-image: url('<?php echo $img[0] ?>')">
+				<article id="feature" data-stellar-background-ratio="0.7" class="entry-header responsive-background" style="background-image: url('<?php echo $img[0] ?>')">
 
 					<div class="container_12 header-text">
 
-						<div class="grid_12">
+						<div class="grid_10 push_1">
 							
 							<div class="category-meta center">
 								<?php 

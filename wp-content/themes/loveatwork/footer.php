@@ -21,7 +21,31 @@
 </div><!-- #page -->
 
 <script src="http://code.jquery.com/jquery.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.stellar.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/waypoints.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/loveatwork-scripts.min.js"></script>
+
+<script>
+	
+	$(window).stellar({
+		horizontalOffset: 50
+	});
+
+	$(".start-page-content").waypoint({
+  		handler: function(dir) {
+	
+		if (dir == "down") {
+			$("#masthead").fadeOut("fast");	
+		} else {
+			$("#masthead").fadeIn("fast");
+		}
+	
+
+  		},
+  		offset: 550
+	});
+
+</script>
 
 <?php wp_footer(); ?>
 
