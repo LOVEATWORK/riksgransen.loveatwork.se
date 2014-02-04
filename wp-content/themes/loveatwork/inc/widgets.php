@@ -176,6 +176,24 @@ class loveatwork_anypost extends WP_Widget {
 
 						<?php
 						break;
+
+						case "people":
+						?>
+
+							<div class="person center">
+								<div class="contact-img"><?php the_post_thumbnail('thumbnail'); ?></div>
+								<h3><?php the_title(); ?></h3>
+								<p><?php the_field("title") ?></p>
+								<p><?php the_field("e-mail") ?></p>
+								<p><?php the_field("phone") ?></p>
+								<p><?php the_field("twitter") ?></p>
+								<p><?php the_field("instagram") ?></p>
+							</div>
+
+						<?php
+						break;
+
+
 						default:
 						?>
 

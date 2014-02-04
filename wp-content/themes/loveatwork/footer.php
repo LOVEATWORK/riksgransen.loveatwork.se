@@ -20,6 +20,11 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.masonry.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/loveatwork-scripts.min.js"></script>
+
 <?php wp_footer(); ?>
 
 </body>

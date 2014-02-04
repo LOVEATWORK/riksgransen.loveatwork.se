@@ -225,6 +225,18 @@ if(function_exists("register_field_group"))
 		'title' => 'Contact information',
 		'fields' => array (
 			array (
+				'key' => 'field_982734987234',
+				'label' => 'Title',
+				'name' => 'title',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'text',
+				'maxlength' => '',
+			),
+			array (
 				'key' => 'field_52ea5fd773696',
 				'label' => 'Phone',
 				'name' => 'phone',

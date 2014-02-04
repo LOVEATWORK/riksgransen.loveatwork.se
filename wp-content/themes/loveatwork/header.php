@@ -20,6 +20,21 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+ <div class="loveatwork-overlay">
+	<span class="loveatwork-close">close</span>
+	<div class="loveatwork-week">
+		<div><span class="loveatwork-city">Lisbon</span><span class="icon-clima-1"></span><span>21°C</span></div>
+		<div><span>Mon</span><span class="icon-clima-1"></span><span>19°C</span></div>
+		<div><span>Tue</span><span class="icon-clima-2"></span><span>19°C</span></div>
+		<div><span>Wed</span><span class="icon-clima-2"></span><span>18°C</span></div>
+		<div><span>Thu</span><span class="icon-clima-2"></span><span>17°C</span></div>
+		<div><span>Fri</span><span class="icon-clima-1"></span><span>19°C</span></div>
+		<div><span>Sat</span><span class="icon-clima-1"></span><span>22°C</span></div>
+		<div><span>Sun</span><span class="icon-clima-1"></span><span>18°C</span></div>
+	</div>
+</div>
+
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<?php include(dirname(__FILE__) . "/inc/masthead.php"); ?>
