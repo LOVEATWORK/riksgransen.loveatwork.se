@@ -10,12 +10,17 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
+
+		<!-- Get random feature here -->
+
+		<!-- Loop the blog -->
 		<?php while ( have_posts() ) : the_post(); ?>
 
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
-					<?php echo do_shortcode('[layerslider id="4"]'); ?>
+
+
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">
