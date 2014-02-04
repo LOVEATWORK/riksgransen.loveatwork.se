@@ -5,7 +5,7 @@
 		
 		<nav class="primary">
 
-			<a href=""><i class="fa fa-bars fa-2x"></i>	
+			<a href="" class="toggle"><i class="fa fa-bars fa-2x"></i>	
 
 			<div class="navigation hide">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary') ); ?>

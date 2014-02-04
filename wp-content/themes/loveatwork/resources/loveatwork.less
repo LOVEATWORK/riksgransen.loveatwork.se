@@ -23,7 +23,7 @@ and Blueprint http://www.blueprintcss.org/
 */
 
 @import "../inc/reset";
-@import "../inc/grid";
+@import "../inc/grid-fluid";
 @import "../inc/fontawesome/font-awesome";
 @import "../inc/loveatwork-variables";
 
@@ -32,7 +32,11 @@ body {
 	font-weight: @standard-light;
 	font-size: 1.6em;
 	margin: 0;
-	padding: 0
+	padding: 0;
+}
+
+#page {
+	position: relative;
 }
 
 h1 {
@@ -128,41 +132,33 @@ a, a:visited {
 /* CONTENT */
 
 .loveatwork-overlay {
-	opacity: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: all 0.4s ease;
-    z-index: -1;
-    pointer-events: none;
-    cursor: default;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0, 0, 0, 0.85);
+    z-index:9999;
+    color: black;
+    display: none;
+}
 
-    .loveatwork-close {
-	    position: absolute;
-	    top: 0.4em;
-	    right: 0.4em;
-	    width: 2em;
-	    height: 2em;
-	    text-indent: -9000px;
-	    cursor: pointer;
-	    z-index: 1000;
-	}
-	 
-	.loveatwork-close:before {
-	    content: 'x';
-	    font-weight: 100;
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 100%;
-	    font-size: 3em;
-	    line-height: 0.6;
-	    text-align: center;
-	    text-indent: 0px;
-	}
+.loveatwork-overlay:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+
+.overlay-content {
+	display: inline-block;
+    padding: 10px 15px;
+    top: 150px;
+    vertical-align: top;
+    position: relative;
+    font-weight:bold;
+    color: #FFF;
 }
 
 .author-avatar {
@@ -172,10 +168,10 @@ a, a:visited {
 .feature, .start-page {
 
 	.entry-header {
-		height: 800px;
+		height: 550px;
 
 		.header-text {
-			padding-top: 450px;
+			padding-top: 250px;
 
 			h1 {
 				font-size: 60px;
@@ -277,4 +273,8 @@ a, a:visited {
 
 .hide {
 	display: none; 
+}
+
+@media only screen and (max-width: 767px) {
+	@import "../inc/responsive/laptop";
 }
