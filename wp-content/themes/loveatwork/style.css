@@ -2364,7 +2364,7 @@ a:visited {
 }
 .feature .entry-header .header-text,
 .start-page .entry-header .header-text {
-  padding-top: 250px;
+  padding-top: 200px;
 }
 .feature .entry-header .header-text h1,
 .start-page .entry-header .header-text h1 {
@@ -2469,8 +2469,26 @@ a:visited {
 .hide {
   display: none;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   body {
-    max-width: 100px;
+    max-width: 100%;
+  }
+  .container_12 {
+    width: 90%;
+  }
+  .container_12 .grid_1,
+  .container_12 .grid_2,
+  .container_12 .grid_3,
+  .container_12 .grid_4,
+  .container_12 .grid_5,
+  .container_12 .grid_6,
+  .container_12 .grid_7,
+  .container_12 .grid_8,
+  .container_12 .grid_9,
+  .container_12 .grid_10,
+  .container_12 .grid_11,
+  .container_12 .grid_12 {
+    display: block;
+    width: 100%;
   }
 }

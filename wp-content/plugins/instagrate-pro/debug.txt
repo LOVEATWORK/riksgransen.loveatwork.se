@@ -10332,3 +10332,172 @@ Tue, 04 Feb 14 19:33:01 +0000 -- Tag to use for API:
 Tue, 04 Feb 14 19:33:02 +0000 -- 0 Images to post
 Tue, 04 Feb 14 19:33:02 +0000 -- Account Unlocked
 ------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:39:47 +0000 -- Debug Output Instagrate Pro v1.5.1 for http://localhost
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:39:46 +0000 -- Starting the controller for accounts with the frequency constant
+Tue, 04 Feb 14 19:39:46 +0000 -- Total accounts: 1
+Tue, 04 Feb 14 19:39:46 +0000 -- Account: 137
+Tue, 04 Feb 14 19:39:46 +0000 -- Account: 137 is a constant poster. Run the posting function
+Tue, 04 Feb 14 19:39:46 +0000 -- Account Now Locked
+Tue, 04 Feb 14 19:39:46 +0000 -- Starting to Post Account: 137
+Tue, 04 Feb 14 19:39:46 +0000 -- Frequency: constant
+Tue, 04 Feb 14 19:39:46 +0000 -- Schedule: 
+Tue, 04 Feb 14 19:39:46 +0000 -- is_home option: 0
+Tue, 04 Feb 14 19:39:46 +0000 -- dup_image option: 0
+Tue, 04 Feb 14 19:39:46 +0000 -- default_title option: Instagram Image
+Tue, 04 Feb 14 19:39:46 +0000 -- credit_link option: 0
+Tue, 04 Feb 14 19:39:46 +0000 -- Posting constantly as instagram
+Tue, 04 Feb 14 19:39:46 +0000 -- Hashtags Filter: 
+Tue, 04 Feb 14 19:39:46 +0000 -- Tag to use for API: 
+Tue, 04 Feb 14 19:39:47 +0000 -- 0 Images to post
+Tue, 04 Feb 14 19:39:47 +0000 -- Account Unlocked
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:40:09 +0000 -- Debug Output Instagrate Pro v1.5.1 for http://localhost
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:40:09 +0000 -- Starting the controller for accounts with the frequency constant
+Tue, 04 Feb 14 19:40:09 +0000 -- Total accounts: 1
+Tue, 04 Feb 14 19:40:09 +0000 -- Account: 137
+Tue, 04 Feb 14 19:40:09 +0000 -- Account: 137 is a constant poster. Run the posting function
+Tue, 04 Feb 14 19:40:09 +0000 -- Account already Locked - already posting
+Tue, 04 Feb 14 19:40:09 +0000 -- Account Unlocked
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:40:09 +0000 -- Debug Output Instagrate Pro v1.5.1 for http://localhost
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:40:09 +0000 -- Starting the controller for accounts with the frequency constant
+Tue, 04 Feb 14 19:40:09 +0000 -- Total accounts: 1
+Tue, 04 Feb 14 19:40:09 +0000 -- Account: 137
+Tue, 04 Feb 14 19:40:09 +0000 -- Account: 137 is a constant poster. Run the posting function
+Tue, 04 Feb 14 19:40:09 +0000 -- Account Now Locked
+Tue, 04 Feb 14 19:40:09 +0000 -- Starting to Post Account: 137
+Tue, 04 Feb 14 19:40:09 +0000 -- Frequency: constant
+Tue, 04 Feb 14 19:40:09 +0000 -- Schedule: 
+Tue, 04 Feb 14 19:40:09 +0000 -- is_home option: 0
+Tue, 04 Feb 14 19:40:09 +0000 -- dup_image option: 0
+Tue, 04 Feb 14 19:40:09 +0000 -- default_title option: Instagram Image
+Tue, 04 Feb 14 19:40:09 +0000 -- credit_link option: 0
+Tue, 04 Feb 14 19:40:09 +0000 -- Posting constantly as instagram
+Tue, 04 Feb 14 19:40:09 +0000 -- Hashtags Filter: 
+Tue, 04 Feb 14 19:40:09 +0000 -- Tag to use for API: 
+Tue, 04 Feb 14 19:40:09 +0000 -- 0 Images to post
+Tue, 04 Feb 14 19:40:09 +0000 -- Account Unlocked
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:42:18 +0000 -- Debug Output Instagrate Pro v1.5.1 for http://localhost
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:42:17 +0000 -- Starting the controller for accounts with the frequency constant
+Tue, 04 Feb 14 19:42:17 +0000 -- Total accounts: 1
+Tue, 04 Feb 14 19:42:17 +0000 -- Account: 137
+Tue, 04 Feb 14 19:42:17 +0000 -- Account: 137 is a constant poster. Run the posting function
+Tue, 04 Feb 14 19:42:17 +0000 -- Account Now Locked
+Tue, 04 Feb 14 19:42:17 +0000 -- Starting to Post Account: 137
+Tue, 04 Feb 14 19:42:17 +0000 -- Frequency: constant
+Tue, 04 Feb 14 19:42:17 +0000 -- Schedule: 
+Tue, 04 Feb 14 19:42:17 +0000 -- is_home option: 0
+Tue, 04 Feb 14 19:42:17 +0000 -- dup_image option: 0
+Tue, 04 Feb 14 19:42:17 +0000 -- default_title option: Instagram Image
+Tue, 04 Feb 14 19:42:17 +0000 -- credit_link option: 0
+Tue, 04 Feb 14 19:42:17 +0000 -- Posting constantly as instagram
+Tue, 04 Feb 14 19:42:17 +0000 -- Hashtags Filter: 
+Tue, 04 Feb 14 19:42:17 +0000 -- Tag to use for API: 
+Tue, 04 Feb 14 19:42:18 +0000 -- 0 Images to post
+Tue, 04 Feb 14 19:42:18 +0000 -- Account Unlocked
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:43:01 +0000 -- Debug Output Instagrate Pro v1.5.1 for http://localhost
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:42:57 +0000 -- Starting the controller for accounts with the frequency constant
+Tue, 04 Feb 14 19:42:57 +0000 -- Total accounts: 1
+Tue, 04 Feb 14 19:42:57 +0000 -- Account: 137
+Tue, 04 Feb 14 19:42:57 +0000 -- Account: 137 is a constant poster. Run the posting function
+Tue, 04 Feb 14 19:42:57 +0000 -- Account Now Locked
+Tue, 04 Feb 14 19:42:57 +0000 -- Starting to Post Account: 137
+Tue, 04 Feb 14 19:42:57 +0000 -- Frequency: constant
+Tue, 04 Feb 14 19:42:57 +0000 -- Schedule: 
+Tue, 04 Feb 14 19:42:57 +0000 -- is_home option: 0
+Tue, 04 Feb 14 19:42:57 +0000 -- dup_image option: 0
+Tue, 04 Feb 14 19:42:57 +0000 -- default_title option: Instagram Image
+Tue, 04 Feb 14 19:42:57 +0000 -- credit_link option: 0
+Tue, 04 Feb 14 19:42:57 +0000 -- Posting constantly as instagram
+Tue, 04 Feb 14 19:42:57 +0000 -- Hashtags Filter: 
+Tue, 04 Feb 14 19:42:57 +0000 -- Tag to use for API: 
+Tue, 04 Feb 14 19:43:01 +0000 -- 0 Images to post
+Tue, 04 Feb 14 19:43:01 +0000 -- Account Unlocked
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:43:36 +0000 -- Debug Output Instagrate Pro v1.5.1 for http://localhost
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:43:35 +0000 -- Starting the controller for accounts with the frequency constant
+Tue, 04 Feb 14 19:43:35 +0000 -- Total accounts: 1
+Tue, 04 Feb 14 19:43:35 +0000 -- Account: 137
+Tue, 04 Feb 14 19:43:35 +0000 -- Account: 137 is a constant poster. Run the posting function
+Tue, 04 Feb 14 19:43:35 +0000 -- Account Now Locked
+Tue, 04 Feb 14 19:43:35 +0000 -- Starting to Post Account: 137
+Tue, 04 Feb 14 19:43:35 +0000 -- Frequency: constant
+Tue, 04 Feb 14 19:43:35 +0000 -- Schedule: 
+Tue, 04 Feb 14 19:43:35 +0000 -- is_home option: 0
+Tue, 04 Feb 14 19:43:35 +0000 -- dup_image option: 0
+Tue, 04 Feb 14 19:43:35 +0000 -- default_title option: Instagram Image
+Tue, 04 Feb 14 19:43:35 +0000 -- credit_link option: 0
+Tue, 04 Feb 14 19:43:35 +0000 -- Posting constantly as instagram
+Tue, 04 Feb 14 19:43:35 +0000 -- Hashtags Filter: 
+Tue, 04 Feb 14 19:43:35 +0000 -- Tag to use for API: 
+Tue, 04 Feb 14 19:43:36 +0000 -- 0 Images to post
+Tue, 04 Feb 14 19:43:36 +0000 -- Account Unlocked
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:43:54 +0000 -- Debug Output Instagrate Pro v1.5.1 for http://localhost
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:43:53 +0000 -- Starting the controller for accounts with the frequency constant
+Tue, 04 Feb 14 19:43:53 +0000 -- Total accounts: 1
+Tue, 04 Feb 14 19:43:53 +0000 -- Account: 137
+Tue, 04 Feb 14 19:43:53 +0000 -- Account: 137 is a constant poster. Run the posting function
+Tue, 04 Feb 14 19:43:53 +0000 -- Account Now Locked
+Tue, 04 Feb 14 19:43:53 +0000 -- Starting to Post Account: 137
+Tue, 04 Feb 14 19:43:53 +0000 -- Frequency: constant
+Tue, 04 Feb 14 19:43:53 +0000 -- Schedule: 
+Tue, 04 Feb 14 19:43:53 +0000 -- is_home option: 0
+Tue, 04 Feb 14 19:43:53 +0000 -- dup_image option: 0
+Tue, 04 Feb 14 19:43:53 +0000 -- default_title option: Instagram Image
+Tue, 04 Feb 14 19:43:53 +0000 -- credit_link option: 0
+Tue, 04 Feb 14 19:43:53 +0000 -- Posting constantly as instagram
+Tue, 04 Feb 14 19:43:53 +0000 -- Hashtags Filter: 
+Tue, 04 Feb 14 19:43:53 +0000 -- Tag to use for API: 
+Tue, 04 Feb 14 19:43:54 +0000 -- 0 Images to post
+Tue, 04 Feb 14 19:43:54 +0000 -- Account Unlocked
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:44:17 +0000 -- Debug Output Instagrate Pro v1.5.1 for http://localhost
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:44:16 +0000 -- Starting the controller for accounts with the frequency constant
+Tue, 04 Feb 14 19:44:16 +0000 -- Total accounts: 1
+Tue, 04 Feb 14 19:44:16 +0000 -- Account: 137
+Tue, 04 Feb 14 19:44:16 +0000 -- Account: 137 is a constant poster. Run the posting function
+Tue, 04 Feb 14 19:44:16 +0000 -- Account Now Locked
+Tue, 04 Feb 14 19:44:16 +0000 -- Starting to Post Account: 137
+Tue, 04 Feb 14 19:44:16 +0000 -- Frequency: constant
+Tue, 04 Feb 14 19:44:16 +0000 -- Schedule: 
+Tue, 04 Feb 14 19:44:16 +0000 -- is_home option: 0
+Tue, 04 Feb 14 19:44:16 +0000 -- dup_image option: 0
+Tue, 04 Feb 14 19:44:16 +0000 -- default_title option: Instagram Image
+Tue, 04 Feb 14 19:44:16 +0000 -- credit_link option: 0
+Tue, 04 Feb 14 19:44:16 +0000 -- Posting constantly as instagram
+Tue, 04 Feb 14 19:44:16 +0000 -- Hashtags Filter: 
+Tue, 04 Feb 14 19:44:16 +0000 -- Tag to use for API: 
+Tue, 04 Feb 14 19:44:17 +0000 -- 0 Images to post
+Tue, 04 Feb 14 19:44:17 +0000 -- Account Unlocked
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:45:02 +0000 -- Debug Output Instagrate Pro v1.5.1 for http://localhost
+------------------------------------------------------------------------------
+Tue, 04 Feb 14 19:45:02 +0000 -- Starting the controller for accounts with the frequency constant
+Tue, 04 Feb 14 19:45:02 +0000 -- Total accounts: 1
+Tue, 04 Feb 14 19:45:02 +0000 -- Account: 137
+Tue, 04 Feb 14 19:45:02 +0000 -- Account: 137 is a constant poster. Run the posting function
+Tue, 04 Feb 14 19:45:02 +0000 -- Account Now Locked
+Tue, 04 Feb 14 19:45:02 +0000 -- Starting to Post Account: 137
+Tue, 04 Feb 14 19:45:02 +0000 -- Frequency: constant
+Tue, 04 Feb 14 19:45:02 +0000 -- Schedule: 
+Tue, 04 Feb 14 19:45:02 +0000 -- is_home option: 0
+Tue, 04 Feb 14 19:45:02 +0000 -- dup_image option: 0
+Tue, 04 Feb 14 19:45:02 +0000 -- default_title option: Instagram Image
+Tue, 04 Feb 14 19:45:02 +0000 -- credit_link option: 0
+Tue, 04 Feb 14 19:45:02 +0000 -- Posting constantly as instagram
+Tue, 04 Feb 14 19:45:02 +0000 -- Hashtags Filter: 
+Tue, 04 Feb 14 19:45:02 +0000 -- Tag to use for API: 
+Tue, 04 Feb 14 19:45:02 +0000 -- 0 Images to post
+Tue, 04 Feb 14 19:45:02 +0000 -- Account Unlocked
+------------------------------------------------------------------------------
