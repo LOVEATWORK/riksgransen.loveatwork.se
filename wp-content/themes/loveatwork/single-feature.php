@@ -10,7 +10,7 @@ get_header('feature'); ?>
 <?php $img = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full'); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header" style="background-image: url('<?php echo $img[0] ?>')">
+	<header class="entry-header responsive-background" style="background-image: url('<?php echo $img[0] ?>')">
 
 		<div class="container_12 header-text">
 

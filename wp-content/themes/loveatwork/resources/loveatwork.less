@@ -52,6 +52,11 @@ h3 {
 	font-weight: @standard-bold;
 }
 
+a, a:visited {
+	text-decoration: none;
+	color: @link-color;
+}
+
 .gray {
 	background: #3e3e3e;
 }
@@ -120,21 +125,16 @@ h3 {
 
 }
 
-
-
 /* CONTENT */
 
 .author-avatar {
 	.border-radius(12px);
 }
 
-.feature {
+.feature, .start-page {
 
 	.entry-header {
 		height: 800px;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
 
 		.header-text {
 			padding-top: 450px;
@@ -145,6 +145,8 @@ h3 {
 				font-weight: normal;
 				line-height: 65px;
 				font-family: Georgia, serif;
+
+				a { color: #FFF; }
 			}
 
 			h2 {
@@ -152,10 +154,13 @@ h3 {
 				color: #FFF;
 				font-weight: @standard-light;
 				font-size: 20px;
+
+				a { color: #FFF; }
+
 			}
 		}
 
-		.entry-meta {
+		.entry-meta, .category-meta {
 			margin-top: 30px;
 			color: #FFF;
 			line-height: 25px;
@@ -174,10 +179,8 @@ h3 {
 				color: #FFF;
 				margin-bottom: 30px;
 			}
-
 		}
 	}
-
 }
 
 
@@ -192,6 +195,11 @@ h3 {
 	text-align: center;
 }
 
+.responsive-background {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 
 .menu-list {
 	margin: 0;
