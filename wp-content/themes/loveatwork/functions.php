@@ -58,6 +58,16 @@ function loveatwork_setup() {
 	// Enable support for HTML5 markup.
 	add_theme_support( 'html5', array( 'comment-list', 'search-form', 'comment-form', ) );
 
+	function loveatwork_excerpt_length( $length ) {
+		return 20;
+	}
+	add_filter( 'excerpt_length', 'loveatwork_excerpt_length', 999 );
+
+	function loveatwork_excerpt_more( $more ) {
+		return ' <i class="fa fa-ellipsis-h readmore"></i>';
+	}
+	add_filter('excerpt_more', 'loveatwork_excerpt_more');
+
 
 }
 endif; // loveatwork_setup

@@ -64,13 +64,17 @@ class loveatwork_recentposts extends WP_Widget {
 
 				foreach( $myposts as $post ) : setup_postdata($post); ?>
 
-					<article id="post-<?php the_ID(); ?>" class="grid_4 blog-intro">
+					<article id="post-<?php the_ID(); ?>" class="grid_4 blog-intro center">
 
-						<?php if($thumbnail == true && has_post_thumbnail() ) { ?>
-							<a href="<?php the_permalink(); ?>" class="rp-thumb"><?php the_post_thumbnail();?></a>
-						<?php } ?>
+						<header class="">
+							
+							<?php if($thumbnail == true && has_post_thumbnail() ) { ?>
+							<a href="<?php the_permalink(); ?>" class="rp-thumb circle"><?php the_post_thumbnail('thumbnail');?></a>
+							<?php } ?>
 
-						<header class=""><h2><?php the_title(); ?></h2></header>
+							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+						</header>
 						<div class="entry-content"><?php the_excerpt(); ?></div>
 
 					</article>

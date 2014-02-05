@@ -5,3 +5,5 @@ wp-content/uploads/
 wp-content/cache/
 
 sftp-config.json
+
+wp-content/plugins/instagrate-pro/debug.txt
