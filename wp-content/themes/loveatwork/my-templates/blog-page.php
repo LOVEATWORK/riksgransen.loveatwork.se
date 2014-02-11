@@ -15,7 +15,6 @@ get_header(); ?>
 
 		<div class="blog-page-content">
 
-		
 
 		</div>
 

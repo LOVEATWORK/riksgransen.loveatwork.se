@@ -2246,6 +2246,10 @@ body {
   margin: 0;
   padding: 0;
 }
+.container_12 {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 #page {
   position: relative;
 }
