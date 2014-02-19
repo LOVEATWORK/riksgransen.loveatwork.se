@@ -34,27 +34,25 @@
 
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', 'loveatwork' ) );
+				$tags_list = get_the_tag_list( '', __( '', 'loveatwork' ) );
 				if ( $tags_list ) :
 			?>
+
+			<div class="grid_7 alpha">
 			<span class="tags-links">
-				<?php printf( __( 'Tagged %1$s', 'loveatwork' ), $tags_list ); ?>
+				<?php printf( __( '%1$s', 'loveatwork' ), $tags_list ); ?>
 			</span>
+			</div>
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
 
-		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'loveatwork' ), __( '1 Comment', 'loveatwork' ), __( '% Comments', 'loveatwork' ) ); ?></span>
-		<?php endif; ?>
+			<div class="author-meta grid_5 omega">
+					<p>
+					<?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
+					<span class="author-name"><?php the_author(); ?>, <?php the_date(); ?></span>
+					<span class="post-date"><?php the_date(); ?></span>
+				</p>
+			</div><!-- .entry-meta -->
 
-		<div class="entry-meta">
-				<p>
-				<?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
-				<span class="author-name"><?php the_author(); ?>, <?php the_date(); ?></span>
-				<span class="post-date"><?php the_date(); ?></span>
-			</p>
-		</div><!-- .entry-meta -->
-
-		<?php edit_post_link( __( 'Edit', 'loveatwork' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->
