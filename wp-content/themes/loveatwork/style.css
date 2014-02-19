@@ -2337,6 +2337,9 @@ a:visited {
   color: #FFF;
 }
 /* CONTENT */
+body.blog #masthead nav.primary a {
+  color: #CCC;
+}
 .loveatwork-overlay {
   position: absolute;
   top: 0;
@@ -2464,6 +2467,40 @@ a:visited {
 }
 .blog-content-area {
   margin-top: 150px;
+}
+.blog-content-area .blog-feed article {
+  margin-bottom: 100px;
+}
+.blog-content-area .blog-feed h1 {
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 40px;
+}
+.blog-content-area .blog-feed h1 a {
+  color: #3e3e3e;
+}
+.blog-content-area .blog-feed h1 a:hover {
+  color: #21caff;
+}
+.blog-content-area .blog-feed h3 {
+  font-weight: 300;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.blog-content-area .blog-feed .entry-meta {
+  margin: 5px 0 40px 0;
+}
+.blog-content-area .blog-feed .entry-meta img {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+.blog-content-area .blog-feed .entry-meta .author-name {
+  display: block;
+  padding-top: 2px;
+  font-size: 14px;
+  color: #ccc;
 }
 /* UTILITIES */
 .ir {

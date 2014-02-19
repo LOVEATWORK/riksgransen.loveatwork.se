@@ -9,9 +9,7 @@
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php loveatwork_posted_on(); ?>
-		</div><!-- .entry-meta -->
+	
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
@@ -33,15 +31,6 @@
 
 	<footer class="entry-meta">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', 'loveatwork' ) );
-				if ( $categories_list && loveatwork_categorized_blog() ) :
-			?>
-			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'loveatwork' ), $categories_list ); ?>
-			</span>
-			<?php endif; // End if categories ?>
 
 			<?php
 				/* translators: used between list items, there is a space after the comma */
@@ -57,6 +46,14 @@
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'loveatwork' ), __( '1 Comment', 'loveatwork' ), __( '% Comments', 'loveatwork' ) ); ?></span>
 		<?php endif; ?>
+
+		<div class="entry-meta">
+				<p>
+				<?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
+				<span class="author-name"><?php the_author(); ?>, <?php the_date(); ?></span>
+				<span class="post-date"><?php the_date(); ?></span>
+			</p>
+		</div><!-- .entry-meta -->
 
 		<?php edit_post_link( __( 'Edit', 'loveatwork' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
