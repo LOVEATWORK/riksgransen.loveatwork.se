@@ -2462,6 +2462,9 @@ a:visited {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+.blog-content-area {
+  margin-top: 150px;
+}
 /* UTILITIES */
 .ir {
   text-indent: 100%;

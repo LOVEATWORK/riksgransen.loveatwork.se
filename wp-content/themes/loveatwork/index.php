@@ -13,9 +13,11 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area blog-content-area">
 		<main id="main" class="site-main container_12" role="main">
 
+
+		<div class="grid_8 blog-feed">
 		<?php 
 
 		// Blog posts
@@ -41,6 +43,11 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
+		</div>
+
+		<div class="grid_4 blog-sidebar">
+			<?php get_sidebar('blog') ?>
+		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

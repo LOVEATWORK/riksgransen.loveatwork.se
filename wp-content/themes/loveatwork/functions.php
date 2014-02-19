@@ -149,6 +149,7 @@ add_action( 'after_setup_theme', 'loveatwork_setup' );
  * Register widgetized area and update sidebar with default widgets.
  */
 function loveatwork_widgets_init() {
+	
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'loveatwork' ),
 		'id'            => 'sidebar-1',
@@ -163,6 +164,15 @@ function loveatwork_widgets_init() {
 		'before_widget' => '<aside id="%1$s" class="overlay-widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="overlay-widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Blog sidebar', 'loveatwork' ),
+		'id'            => 'blog',
+		'before_widget' => '<aside id="%1$s" class="blog-sidebar-widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="blog-sidebar-widget-title">',
 		'after_title'   => '</h1>',
 	) );
 }
